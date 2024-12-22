@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahalla Sayti</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mahalla haqida</h1>
+      <p>Mahallamiz hayoti, mas'ullar va faoliyat haqida ma'lumot</p>
+    </div>
+  </header>
+  <nav>
+    <a href="./index.html">Bosh sahifa</a>
+    <a href="./admin.html">Admin</a>
+    <a href="./citizens.html">Aholi</a>
+    <a href="./contact.html">Bog'lanish</a>
+  </nav>
+  <main>
+    <!-- 1-bo'lim: Mahalla haqida umumiy ma'lumot -->
+    <section id="about">
+      <div class="container">
+        <h2>Mahalla haqida</h2>
+        <p>
+          Bizning mahalla 1992-yilda tashkil etilgan bo'lib, 1500 dan ortiq xonadonlar joylashgan.
+          Mahalla aholisining ko'pchiligi faol va ijtimoiy hayotda ishtirok etadi.
+        </p>
+        <ul>
+          <li>Hudud: 15 gektar</li>
+          <li>Fuqarolar soni: 4500</li>
+          <li>Ko'chalar soni: 20 ta</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 2-bo'lim: Mahalla mas'ullari -->
+    <section id="responsibles">
+      <div class="container">
+        <h2>Mahalla mas'ullari</h2>
+        <div class="responsibles">
+          <div class="card">
+            <h3>Aliyev Akmal</h3>
+            <p>Mahalla raisi</p>
+          </div>
+          <div class="card">
+            <h3>Islomova Zulfiya</h3>
+            <p>Ijtimoiy masalalar bo'yicha mas'ul</p>
+          </div>
+          <div class="card">
+            <h3>Karimov Rustam</h3>
+            <p>Yoshlar bilan ishlash bo'yicha mas'ul</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-bo'lim: Mahalladagi xizmatlar -->
+    <section id="services">
+      <div class="container">
+        <h2>Xizmatlar</h2>
+        <p>Mahallamiz tomonidan quyidagi xizmatlar taqdim etiladi:</p>
+        <ul>
+          <li>Fuqarolar huquqiy maslahati</li>
+          <li>Ko'chalarni obodonlashtirish</li>
+          <li>Sport va madaniy tadbirlar</li>
+          <li>Qarovsiz oilalarga yordam</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4-bo'lim: Yangiliklar va voqealar -->
+    <section id="news">
+      <div class="container">
+        <h2>Yangiliklar</h2>
+        <div class="news">
+          <div class="news-item">
+            <h3>Obodonlashtirish ishlari boshlandi</h3>
+            <p>Mahallamizda yangi bog' tashkil etilmoqda. Hamma ishtirok etishi mumkin!</p>
+          </div>
+          <div class="news-item">
+            <h3>Sport musobaqalari</h3>
+            <p>26-dekabr kuni sport musobaqalari o'tkaziladi. Ishtirok eting va sovrinlarni qo'lga kiriting!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5-bo'lim: Aloqa -->
+    <section id="contact">
+      <div class="container">
+        <h2>Aloqa</h2>
+        <p>Biz bilan bog'lanish uchun quyidagi formani to'ldiring:</p>
+        <form>
+          <label for="name">Ism:</label>
+          <input type="text" id="name" placeholder="Ismingizni kiriting" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Email manzilingizni kiriting" required>
+
+          <label for="message">Xabar:</label>
+          <textarea id="message" rows="4" placeholder="Xabaringizni kiriting" required></textarea>
+
+          <button type="submit">Yuborish</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Mahalla. Barcha huquqlar himoyalangan.</p>
+  </footer>
+</body>
+</html>

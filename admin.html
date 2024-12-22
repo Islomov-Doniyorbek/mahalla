@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+      table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  thead th {
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody tr:nth-child(even) {
+    background-color: #e9ffe8;
+  }
+  
+  tbody tr:hover {
+    background-color: #d4f5d4;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+  }
+  
+  td {
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+  }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Admin Panel</h1>
+  </header>
+  <main>
+    <h2>Yangi Fuqaro Qo'shish</h2>
+    <form id="add-citizen-form">
+      <label for="name">Ism:</label>
+      <input type="text" id="name" placeholder="Fuqaro ismi" required>
+
+      <label for="birthDate">Tug'ilgan Sana:</label>
+      <input type="date" id="birthDate" required>
+
+      <label for="address">Manzil:</label>
+      <input type="text" id="address" placeholder="Manzil" required>
+
+      <label for="workplace">Ish Joyi:</label>
+      <input type="text" id="workplace" placeholder="Ish joyi" required>
+
+      <label for="passport">Passport Ma'lumotlari:</label>
+      <input type="text" id="passport" placeholder="AA1234567" required>
+
+      <button type="submit">Qo'shish</button>
+    </form>
+
+    <h2>Mavjud Fuqarolar</h2>
+    <table id="citizen-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Ism</th>
+          <th>Tug'ilgan Sana</th>
+          <th>Manzil</th>
+          <th>Ish Joyi</th>
+          <th>Passport</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JavaScript orqali fuqaro ma'lumotlari qo'shiladi -->
+      </tbody>
+    </table>
+  </main>
+  <footer>
+    <p>&copy; 2024 Mahalla. Barcha huquqlar himoyalangan.</p>
+  </footer>
+  <script src="admin.js"></script>
+</body>
+</html>

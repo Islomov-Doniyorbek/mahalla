@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa</title>
+  <style>
+    /* Aloqa bo'limi */
+#contact {
+  background-color: #f8f8f8;
+  padding: 40px 20px;
+}
+
+#contact .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+#contact p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.contact-info {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h3 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+  color: #333;
+}
+
+form {
+  flex: 1 1 45%;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+  </style>
+</head>
+<body>
+    <section id="contact">
+        <div class="container">
+          <h2>Aloqa</h2>
+          <p>Biz bilan bog‘lanish uchun quyidagi shaklni to‘ldiring yoki to‘g‘ridan-to‘g‘ri qo‘ng‘iroq qiling.</p>
+          
+          <div class="contact-grid">
+            <!-- Aloqa ma'lumotlari -->
+            <div class="contact-info">
+              <h3>Bizning Aloqa Ma'lumotlarimiz</h3>
+              <p><strong>Telefon:</strong> +998 90 123 45 67</p>
+              <p><strong>Email:</strong> mahalla@example.com</p>
+              <p><strong>Manzil:</strong> Toshkent sh., Yangiobod tumani, Ko'cha 15, Uy 3</p>
+            </div>
+      
+            <!-- Kontakt formasi -->
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="name">Ism</label>
+                <input type="text" id="name" placeholder="Ismingiz" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Email manzilingiz" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Xabar</label>
+                <textarea id="message" rows="5" placeholder="Xabaringizni kiriting" required></textarea>
+              </div>
+              <button type="submit">Xabar Yuborish</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      
+</body>
+</html>
